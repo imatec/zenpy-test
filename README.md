@@ -1,2 +1,2 @@
 # zenpy-test
-a test base for using zenpy lib
+A Flask codebase for testing zenpy lib 
