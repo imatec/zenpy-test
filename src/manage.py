@@ -20,9 +20,9 @@ app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 manager = Manager(app)
 logger = app.logger
 creds = {
-    'email': current_app.config.get('ZENDESK_EMAIL', None),
-    'token': current_app.config.get('ZENDESK_TOKEN', None),
-    'subdomain': current_app.config.get('ZENDESK_SUBDOMAIN', None)
+    'email': app.config.get('ZENDESK_EMAIL', None),
+    'token': app.config.get('ZENDESK_TOKEN', None),
+    'subdomain': app.config.get('ZENDESK_SUBDOMAIN', None)
 }
 
 
