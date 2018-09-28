@@ -39,7 +39,7 @@ def zdviewtest(view_title):
         metrics = zd_client.tickets.metrics(ticket.id)
         dd, hh, mm = days_hours_minutes(
             parse(metrics.status_updated_at) - parse(metrics.created_at))
-        print("{0};{1};{2};{3};{4};{5};{6};{7}".format(
+        print(u"{0};{1};{2};{3};{4};{5};{6};{7}".format(
             ticket.id,
             ticket.subject,
             ticket.status,
